@@ -12,7 +12,7 @@ config = get_config()
 @given(u'a post id')
 def step_impl(context):
     context.id = "1"
-    context.expected_response = response_resources.posts_post_response
+    context.expected_response = response_resources.posts_get_response
 
 
 @when(u'we execute the GET API method')
