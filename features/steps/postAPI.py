@@ -16,7 +16,7 @@ def step_impl(context):
     context.expected_response = response_resources.posts_post_response
 
 
-@when(u'we execute the posts API method')
+@when(u'we execute the POST API method')
 def step_impl(context):
     context.response = requests.post(
         config["API"]["home"] + ApiResources.posts,
@@ -32,4 +32,3 @@ def step_impl(context):
 
     assert_equal(response_resources.posts_post_response, context.response.json(),
                  f"Expected {context.expected_response} but received {context.response.json()}.")
-
