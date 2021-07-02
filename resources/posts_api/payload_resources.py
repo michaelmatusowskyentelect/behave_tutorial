@@ -16,7 +16,7 @@ posts_post_payload = Payload(
         "userId": 2
     },
     {
-        "Content-type": "application/json; charset=UTF-8",
+        "Content-type": "application/json; charset=UTF-8"
     }
 )
 
